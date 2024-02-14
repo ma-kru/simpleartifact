@@ -1,4 +1,4 @@
-ASname: create and artifact
+name: create and artifact
 env:
   MY_ARTIFACT: 'My_Artifact'
 on: [push]
