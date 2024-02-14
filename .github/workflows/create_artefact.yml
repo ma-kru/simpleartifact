@@ -1,0 +1,18 @@
+name: create and artifact
+env:
+  MY_ARTIFACT: 'My_Artifact'
+on: [push]
+
+jobs:
+  Create: 
+    name: create my artifact
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v1
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: ${{env.MY_ARTIFACT}}
+        path: ./readme.md
