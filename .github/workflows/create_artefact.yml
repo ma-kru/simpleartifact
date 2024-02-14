@@ -1,4 +1,4 @@
-name: create and artifact
+ASname: create and artifact
 env:
   MY_ARTIFACT: 'My_Artifact'
 on: [push]
@@ -15,4 +15,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: ${{env.MY_ARTIFACT}}
-        path: ./readme.md
+        path: ./README.md
